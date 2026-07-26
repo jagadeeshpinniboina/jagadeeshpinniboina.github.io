@@ -30,16 +30,28 @@ body{
     font-weight:700;
 }
 
+.navbar{
+    display:flex;
+    gap:12px;
+}
+
 .navbar a{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding:10px 18px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.15);
+    border-radius:30px;
     color:#fff;
     text-decoration:none;
-    margin-left:25px;
-    font-size:18px;
     transition:.3s;
 }
 
 .navbar a:hover{
-    color:#00abf0;
+    background:#00abf0;
+    color:#081b29;
+    transform:translateY(-3px);
 }
 
 section{
