@@ -257,3 +257,12 @@ section{
     transform:translateY(-5px);
     box-shadow:0 0 20px #00abf0;
 }
+.project-card p{
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+.project-card strong{
+    display: block;
+    margin-top: 15px;
+    color: #00abf0;
+}
