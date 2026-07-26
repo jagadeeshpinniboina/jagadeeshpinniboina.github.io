@@ -85,12 +85,19 @@ section{
     line-height:1.8;
     font-size:18px;
 }
-
+.home-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-item: center;
+}
 .home-image img{
-    width:340px;
-    border-radius:50%;
-    border:6px solid #00abf0;
-    box-shadow:0 0 35px #00abf0;
+    width: 340px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #00abf0;
+    box-shadow: 0 0 35px #00abf0;
 }
 
 .buttons{
