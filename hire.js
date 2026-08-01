@@ -1,4 +1,4 @@
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("o2WUjQw1-3DdMVG9H");
 
 const form = document.querySelector("form");
 
@@ -6,13 +6,15 @@ form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_twc6qqp",
+        "template_ijndy0b",
         this
-    ).then(function () {
+    )
+    .then(function () {
         alert("Message sent successfully!");
         form.reset();
-    }, function (error) {
+    })
+    .catch(function (error) {
         alert("Failed to send message.");
         console.log(error);
     });
