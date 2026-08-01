@@ -131,7 +131,23 @@ section{
     margin-bottom:50px;
 }
 
-.about-content,
+.about-content{
+    max-width:900px;
+    margin:auto;
+    background:#112e42;
+    padding:30px;
+    border-radius:18px;
+    text-align:center;
+    transition:.4s;
+    border:2px solid transparent;
+}
+
+.about-content:hover{
+    transform:translateY(-10px);
+    border-color:#00abf0;
+    box-shadow:0 0 20px rgba(0,171,240,.4);
+}
+
 .contact-content{
     max-width:900px;
     margin:auto;
@@ -143,8 +159,8 @@ section{
     margin:20px 0;
     font-size:18px;
     line-height:1.8;
+    color:#fff;
 }
-
 .skills-container,
 .projects-container{
     display:grid;
