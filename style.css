@@ -293,58 +293,33 @@ section{
 }
 
 .contact-card p{
-    font-size:20px;
-    margin:20px 0;
-    line-height:1.8;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:15px 0;
+    white-space:nowrap;
 }
 
 .contact-card i{
     color:#00abf0;
-    margin-right:12px;
-    width:28px;
+    width:22px;
+    flex-shrink:0;
+}
+
+.contact-card strong{
+    margin-right:0;
+    min-width:auto;
 }
 
 .contact-card a{
     color:#ffffff;
     text-decoration:none;
+    white-space:nowrap;
+    word-break:normal;
 }
 
 .contact-card a:hover{
     color:#00abf0;
-}
-.about{
-    text-align:center;
-    padding:80px 10%;
-}
-
-.about-content{
-    max-width:900px;
-    margin:40px auto;
-    padding:35px;
-    background:#111827;
-    border:2px solid #00abf0;
-    border-radius:20px;
-    box-shadow:0 0 20px rgba(0,171,240,.3);
-}
-
-.about-content p{
-    font-size:20px;
-    line-height:1.8;
-    margin:20px 0;
-}
-.contact-card p{
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    margin: 18px 0;
-}
-
-.contact-card strong{
-    min-width: 90px;
-}
-
-.contact-card a{
-    word-break: break-word;
 }
 #theme-toggle{
     background:#00abf0;
