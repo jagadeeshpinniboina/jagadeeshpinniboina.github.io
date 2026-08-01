@@ -1,15 +1,23 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", function () {
 
-const form = document.querySelector("form");
+    emailjs.init("o2WUjQw1-3DdMVG9H");
 
-form.addEventListener("submit", function(e){
+    const form = document.querySelector("form");
 
-e.preventDefault();
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
 
-alert("Thank you for contacting me! Your message will be sent soon.");
-
-form.reset();
-
-});
+        emailjs.sendForm(
+            "service_twc6qqp",
+            "8t0v0kc",
+            this
+        ).then(function () {
+            alert("Message sent successfully!");
+            form.reset();
+        }, function (error) {
+            alert("Failed to send message.");
+            console.log(error);
+        });
+    });
 
 });
