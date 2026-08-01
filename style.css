@@ -283,13 +283,19 @@ section{
     color: #00abf0;
 }
 .contact-card{
-    max-width:700px;
+    max-width:900px;
     margin:40px auto;
-    padding:35px;
-    background:#111827;
-    border:2px solid #00abf0;
-    border-radius:20px;
-    box-shadow:0 0 20px rgba(0,171,240,.4);
+    padding:30px;
+    background:#112e42;
+    border-radius:18px;
+    border:2px solid transparent;
+    transition:.4s;
+}
+
+.contact-card:hover{
+    transform:translateY(-8px);
+    border-color:#00abf0;
+    box-shadow:0 0 20px rgba(0,171,240,.3);
 }
 
 .contact-card p{
