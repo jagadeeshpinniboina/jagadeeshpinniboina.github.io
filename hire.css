@@ -170,3 +170,20 @@ font-size:34px;
 }
 
 }
+.back-btn {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    color: #00d9ff;
+    border: 2px solid #00d9ff;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #00d9ff;
+    color: #111;
+    box-shadow: 0 0 20px #00d9ff;
+}
